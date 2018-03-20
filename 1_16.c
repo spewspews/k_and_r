@@ -1,17 +1,19 @@
 #include <stdio.h>
 #define MAXLINE 1000
 
-int getline(char line[], int maxline);
+int getline(char line[], int maxline, FILE *file);
 void copy(char to[], char from[]);
 
-main() {
+int main() {
+  FILE *file;
+	file = fopen("file.txt", "r");
   int len;
   int max;
   char line[MAXLINE];
   char longest[MAXLINE];
 
   max = 0;
-  while((len = getline(line, MAXLINE)) >0)
+  while((len = getline(line, MAXLINE, file)) >0)
     if (len > max) {
       max = len;
       copy(longest, line);
@@ -22,11 +24,11 @@ main() {
 }
 
 
-int getline(char s[], int lim)
+int getline(char s[], int lim, FILE *file)
 {
   int c, i;
 
-  for(i = 0; i < lim-1 && (c = getchar()) != EOF && c!= '\n'; ++i)
+  for(i = 0; i < lim-1 && (c = fgetc(file)) != EOF && c!= '\n'; ++i)
     s[i] = c;
   if (c == '\n') {
     s[i] = c;
@@ -39,6 +41,6 @@ int getline(char s[], int lim)
 void copy(char to[], char from[])
 {
   int i;
-  while ((to[i] = from[i]) != '\O')
+  while ((to[i] = from[i]) != '\0')
     ++i;
 }
