@@ -1,6 +1,6 @@
 this is a sentence for the questions in k & r
 I am trying to like C more
-graduate school is going to be very difficult
-this is going to be the longest line in the file so I can test my C program
+graduate school is going to be very difficult asdasdasdasd asdadsasdasd asdadsasd
+this is going to be the longest line in the file so I can test my C program. it needs to be more than eighty characters
 
 
