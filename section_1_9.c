@@ -7,7 +7,7 @@ void copy(char to[], char from[]);
 int main() {
   FILE *file;
 	file = fopen("file.txt", "r");
-  int len, c;
+  int len;
   int max;
   char line[MAXLINE];
   char longest[MAXLINE];
@@ -19,7 +19,6 @@ int main() {
       copy(longest, line);
     }
   if (max > 0)
-    printf("%d\n", max);
     printf("%s", longest);
   return 0;
 }
