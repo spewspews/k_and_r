@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 
-int main() {
-  int c, blank;
+int 
+main(void) {
+  int c, last;
+  printf("%d\n", last);
   while ((c = getchar()) != EOF) {
     if(c != ' ') {
-      if (blank == ' ')
-        putchar(blank);
+      if (last == ' ')
+        putchar(last);
       putchar(c);
     }
-    blank = c;
+    last = c;
   }
 }

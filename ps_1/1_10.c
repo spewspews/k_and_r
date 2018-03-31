@@ -1,23 +1,26 @@
 #include <stdio.h>
 
-int main() {
+int 
+main(void) {
 	int c, x;
 	while((c = getchar()) != EOF)
 		x = 0;
 		if (c == '\t')
 			x = 1;
-			putchar('\\');
-			putchar('\n');
-			putchar('t');
+		putchar('\\');
+		putchar('t');
 		if (c == '\b')
 			x = 1;
-			putchar('\\');
-			putchar('\n');
-			putchar('b');
+		putchar('\\');
+		putchar('b');
 		if (c == '\\')
 			x = 1;
-			putchar('\\');
-			putchar('\\');
+		putchar('\\');
+		putchar('\\');
+		if (c == '\n')
+			x = 1;
+		putchar('n');
 		if (x==0)
 			putchar(c);
+		putchar('\n');
 }

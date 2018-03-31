@@ -2,7 +2,8 @@
 #define IN 1
 #define OUT 0
 
-int main() {
+int 
+main(void) {
 	int c, state;
 	state = OUT;
 
@@ -11,9 +12,8 @@ int main() {
 			state = IN;
 			putchar(c);
 		}
-		else 
-			if (state == IN)
-				state = OUT;
-				putchar('\n');
+		else if (state == IN)
+			state = OUT;
+		putchar('\n');
 	}
 }
