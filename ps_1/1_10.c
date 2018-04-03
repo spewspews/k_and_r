@@ -7,20 +7,20 @@ main(void) {
 		x = 0;
 		if (c == '\t')
 			x = 1;
-		putchar('\\');
-		putchar('t');
+			putchar('\\');
+			putchar('t');
 		if (c == '\b')
 			x = 1;
-		putchar('\\');
-		putchar('b');
+			putchar('\\');
+			putchar('b');
 		if (c == '\\')
 			x = 1;
-		putchar('\\');
-		putchar('\\');
+			putchar('\\');
+			putchar('\\');
 		if (c == '\n')
 			x = 1;
-		putchar('n');
+			putchar('n');
 		if (x==0)
 			putchar(c);
-		putchar('\n');
+	putchar('\n');
 }
