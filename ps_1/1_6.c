@@ -4,10 +4,11 @@ int
 main(void) {
   int c;
 
-  while((c = getchar()) != EOF)
+  while((c = getchar()) != EOF) {
     printf("%d", c);
     if (c == EOF)
       printf("%s, %d\n", "\nthis is the end of the file vlue",c);
+  }
 
 }
 

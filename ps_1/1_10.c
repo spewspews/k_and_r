@@ -3,24 +3,29 @@
 int 
 main(void) {
 	int c, x;
-	while((c = getchar()) != EOF)
+	while((c = getchar()) != EOF) {
 		x = 0;
-		if (c == '\t')
+		if (c == '\t') {
 			x = 1;
 			putchar('\\');
 			putchar('t');
-		if (c == '\b')
+		}
+		if (c == '\b') {
 			x = 1;
 			putchar('\\');
 			putchar('b');
-		if (c == '\\')
+		}
+		if (c == '\\') {
 			x = 1;
 			putchar('\\');
 			putchar('\\');
-		if (c == '\n')
+		}
+		if (c == '\n') {
 			x = 1;
 			putchar('n');
+		}
 		if (x==0)
 			putchar(c);
+	}
 	putchar('\n');
 }
