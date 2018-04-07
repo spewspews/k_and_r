@@ -1,7 +1,10 @@
 #include <stdio.h>
 
+// This is K&R style
+// You should be printing the vlaue of (getchar() != EOF)
 int
-main(void) {
+main(void)
+{
   int c;
 
   while((c = getchar()) != EOF) {

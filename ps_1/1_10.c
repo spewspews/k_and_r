@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int 
-main(void) {
+main(void)
+{
 	int c, x;
 	while((c = getchar()) != EOF) {
 		x = 0;
 		if (c == '\t') {
 			x = 1;
+			// These all can be replaced with something like printf("\\t");
 			putchar('\\');
 			putchar('t');
 		}
@@ -15,6 +17,7 @@ main(void) {
 			putchar('\\');
 			putchar('b');
 		}
+		// You did not have to do these two cases below.
 		if (c == '\\') {
 			x = 1;
 			putchar('\\');

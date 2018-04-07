@@ -1,0 +1,18 @@
+Exercise:
+1-1: 1/2 (Try to get some error messages)
+1-2: 1/2 (Try to come up with a general explanation of what \c is for any given character c)
+1-3: 2/2 Extra credit
+1-4: 2/2
+1-5: 2/2
+1-6: 1/2 (Still not checking the value of (getchar() != EOF))
+1-7: 2/2
+1-9: 2/2
+1-10: 2/2
+1-11: 2/2
+1-12: 1/2 (prints a newline after every character)
+1-13: 2/2
+
+Grade: 20/22 91%
+
+Other comments:
+Try to use K&R style for doing K&R exercises.

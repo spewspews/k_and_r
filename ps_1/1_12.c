@@ -12,8 +12,9 @@ main(void) {
 			state = IN;
 			putchar(c);
 		}
-		else if (state == IN)
+		else if (state == IN) {
 			state = OUT;
-		putchar('\n');
+			putchar('\n');
+		}
 	}
 }
